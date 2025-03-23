@@ -59,7 +59,6 @@ export const techIcons = [
   'vercel',
   'docker',
   'cplusplus',
-  'dotenv',
   'vite',
   'html5',
   'python',
