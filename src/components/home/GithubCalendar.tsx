@@ -11,20 +11,20 @@ export default function GithubContributions() {
         <GitHubCalendar
           username={githubUsername}
           colorScheme='light'
-          fontSize={12}
-          blockSize={12}
-          blockMargin={5}
-          blockRadius={4}
+          fontSize={9}
+          blockSize={9}
+          blockMargin={2}
+          blockRadius={1}
         />
       </div>
       <div className='hidden dark:block'>
         <GitHubCalendar
           username={githubUsername}
           colorScheme='dark'
-          fontSize={12}
-          blockSize={12}
-          blockMargin={5}
-          blockRadius={4}
+          fontSize={9}
+          blockSize={9}
+          blockMargin={2}
+          blockRadius={1}
         />
       </div>
     </div>

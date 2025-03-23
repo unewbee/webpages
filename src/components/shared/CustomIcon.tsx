@@ -19,7 +19,7 @@ import {
 
 export function CustomIcon({
   name,
-  size = 20,
+  size = 22,
 }: {
   name: string
   size?: number

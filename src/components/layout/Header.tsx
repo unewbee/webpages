@@ -12,9 +12,10 @@ import avatarImage from '@/images/avatar.jpg'
 import { navItems } from '@/config/siteConfig'
 import { ThemeToggle } from '@/components/shared/ThemeToggle'
 import { GithubRepo } from '@/components/shared/GithubRepo'
+import { socialLinks } from '@/config/infoConfig'
 import { name } from '@/config/infoConfig'
 import { ChevronDownIcon, XIcon } from 'lucide-react'
-
+import { CustomIcon } from '@/components/shared/CustomIcon'
 import TypingAnimation from "@/components/ui/typing-animation";
 
 function MobileNavItem({
@@ -373,7 +374,7 @@ export function Header() {
                         text={`I'm ${name} `}
                         duration={150}
                       />
-                      👋
+                      👀
                     </div>
                   </div>
                 </div>
@@ -411,7 +412,12 @@ export function Header() {
               <div className="flex justify-end md:flex-1">
                 <div className="pointer-events-auto flex flex-row items-center gap-2 md:mr-2">
                   <ThemeToggle />
-                  <GithubRepo />
+                  {/* <GithubRepo /> */}
+                  {socialLinks.map((link) => (
+                    <Link key={link.name} href={link.href} target="_blank" rel="noopener noreferrer">
+                      <CustomIcon name={link.icon} />
+                    </Link>
+                  ))}
                 </div>
               </div>
             </div>

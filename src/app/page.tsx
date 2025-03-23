@@ -12,7 +12,8 @@ import { projectHeadLine, projectIntro, projects, blogHeadLine, blogIntro, techI
 import { awards, awardsHeadLine, awardsIntro, activities, activitiesHeadLine, activitiesIntro } from '@/config/projects'
 import IconCloud from "@/components/ui/icon-cloud"
 import { Award, Briefcase, Heart } from 'lucide-react'
-
+import GithubContributions from '@/components/home/GithubCalendar'
+import { CustomIcon } from '@/components/shared/CustomIcon'
 export default async function Home() {
   let blogList = (await getAllBlogs()).slice(0, 4)
 
@@ -32,6 +33,16 @@ export default async function Home() {
           </div>
           <div className="relative flex size-full items-center justify-center overflow-hidden w-full px-20 md:px-0 md:w-2/3 ml-auto md:mr-8">
             <IconCloud iconSlugs={techIcons} />
+          </div>
+        </div>
+
+        {/* Github Contributions */}
+        <div className='flex flex-col items-start justify-start'>
+          <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl opacity-80 mb-4">
+            Github Contributions
+          </h2>
+          <div className='flex flex-row items-center justify-center w-full'>
+            <GithubContributions />
           </div>
         </div>
 

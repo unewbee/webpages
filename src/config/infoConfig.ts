@@ -41,6 +41,11 @@ export const socialLinks: Array<SocialLinkType> = [
     icon: 'linkedin',
     href: 'https://www.linkedin.com/in/zengqianyi-hu/',
   },
+  {
+    name: 'Email',
+    icon: 'email',
+    href: 'mailto:Zengqianyi.hu@gmail.com',
+  },
 ]
 
 // https://simpleicons.org/
